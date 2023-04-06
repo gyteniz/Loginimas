@@ -21,6 +21,7 @@ import logging
 
 logging.basicConfig(filename="uzd1.log", level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s')
 
+
 def sk_suma(*args):
     suma = sum(args)
     logging.info(f"Skaiciu {args} suma lygi: {suma}")
@@ -38,7 +39,7 @@ def sak_simboliai(sakinys):
 
 
 def dalyba(x, y):
-    logging.info(f"Skaiciaus {x} padalinimas is {y} lygu {x/y}")
+    logging.info(f"Skaiciaus {x} padalinimas is {y} lygu {x / y}")
     return x / y
 
 

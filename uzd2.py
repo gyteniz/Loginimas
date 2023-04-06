@@ -1,4 +1,3 @@
-
 """
 2.
 Perdaryti 1 užduoties programą, kad:
@@ -16,6 +15,7 @@ import logging
 
 logging.basicConfig(filename="uzd2.log", level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s')
 
+
 def sk_suma(*args):
     suma = sum(args)
     logging.info(f"Skaiciu {args} suma lygi: {suma}")
@@ -28,6 +28,7 @@ def kvad_saknis(skaicius):
         return math.sqrt(skaicius)
     except TypeError:
         logging.exception(f"Klaida: {TypeError.__name__} - bloga ivestis.")
+
 
 def sak_simboliai(sakinys):
     logging.info(f"Sakinys turi {len(sakinys)} simboliu.")
@@ -43,9 +44,6 @@ def dalyba(x, y):
         logging.exception(f"Klaida: {ZeroDivisionError.__name__} - dalyba is nulio negalima.")
     else:
         return rezultatas
-
-
-
 
 
 sk_suma(12, 45, 9, 6, 7, 123)

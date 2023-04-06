@@ -38,6 +38,7 @@ def kvad_saknis(skaicius):
     except TypeError:
         logger.exception(f"Klaida: {TypeError.__name__} - bloga ivestis.")
 
+
 def sak_simboliai(sakinys):
     logger.info(f"Sakinys turi {len(sakinys)} simboliu.")
     return len(sakinys)
@@ -54,17 +55,10 @@ def dalyba(x, y):
         return rezultatas
 
 
-
-
-
 sk_suma(12, 45, 9, 6, 7, 123)
 kvad_saknis("asd")
 sak_simboliai("Kiekviena funkcija turi sukurti INFO lygio log pranešimą apie tai, ką atliko, pvz.:")
 dalyba(81, 0)
-
-
-
-
 
 # def dalyba(a, b):
 #     try:
